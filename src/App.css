@@ -1,0 +1,23 @@
+.App {
+  min-height: 100vh;
+  background-color: var(--background-color);
+  transition: var(--transition);
+}
+
+main {
+  padding-top: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+}

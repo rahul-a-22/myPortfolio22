@@ -1,0 +1,253 @@
+.resume-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.resume-section h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--dark-color);
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.resume-section h3::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.resume-item {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 40px;
+  border-left: 2px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.resume-item:hover {
+  border-left-color: var(--primary-color);
+}
+
+.resume-item::before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+.resume-item .period {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.resume-item h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--dark-color);
+  margin-bottom: 8px;
+}
+
+.resume-item .company {
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.resume-item p {
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+.resume-item .tech-stack {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: var(--light-color);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  border-left: 3px solid var(--primary-color);
+}
+
+.skills-section {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.skills-section h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--dark-color);
+  margin-bottom: 40px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skill-item {
+  background-color: var(--light-color);
+  padding: 15px 20px;
+  border-radius: 25px;
+  border: 2px solid var(--border-color);
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.skill-item:hover {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item i {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+.skill-item:hover i {
+  color: var(--accent-color);
+}
+
+.skill-item span {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .resume-content {
+    gap: 40px;
+  }
+  
+  .resume-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .resume-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .resume-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  
+  .resume-item {
+    padding-left: 25px;
+    margin-bottom: 30px;
+  }
+  
+  .resume-item h4 {
+    font-size: 1.2rem;
+  }
+  
+  .resume-item .company {
+    font-size: 1rem;
+  }
+  
+  .skills-section {
+    margin-top: 60px;
+  }
+  
+  .skills-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .skill-item {
+    padding: 12px 15px;
+    gap: 8px;
+  }
+  
+  .skill-item i {
+    font-size: 1rem;
+  }
+  
+  .skill-item span {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .resume-section h3 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+  }
+  
+  .resume-item {
+    padding-left: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .resume-item h4 {
+    font-size: 1.1rem;
+  }
+  
+  .resume-item .period {
+    font-size: 0.8rem;
+    padding: 4px 12px;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 12px;
+  }
+  
+  .skill-item {
+    padding: 10px 12px;
+    gap: 6px;
+  }
+  
+  .skill-item i {
+    font-size: 0.9rem;
+  }
+  
+  .skill-item span {
+    font-size: 0.85rem;
+  }
+}
