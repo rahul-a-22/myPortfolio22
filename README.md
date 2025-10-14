@@ -6,7 +6,7 @@ Hello! I'm **Rahul A**, a passionate Computer Science student pursuing my B.Tech
 
 ### 🎯 My Focus Areas
 - **Frontend Development** with React.js
-- **Programming Languages**: C, C++, JavaScript, HTML, CSS
+- **Programming Languages**: C, C++, Python, JavaScript, HTML, CSS
 - **Database Management**: MySQL
 - **Core CS Subjects**: Data Structures & Algorithms, Computer Networks, Operating Systems, DBMS
 - **Cybersecurity**: I have a keen interest in network security and ethical hacking
