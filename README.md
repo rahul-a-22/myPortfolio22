@@ -72,7 +72,6 @@ I specialize in creating modern, responsive web applications and have a strong f
 ## 🔗 Connect With Me
 
 - **Email**: rahularahul0000@gmail.com
-- **Phone**: +91 9164897157
 - **Location**: Bangalore, Karnataka, India
 - **GitHub**: [rahul-a-22](https://github.com/rahul-a-22)
 
