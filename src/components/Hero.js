@@ -29,7 +29,7 @@ const Hero = ({ id }) => {
         <div className="hero-content">
           <div className="hero-text">
             <h1>
-              Hola, I'm <span>Rahul</span>
+              Hola, I'm <span>Rahul A</span>
             </h1>
             <p>
               A passionate Computer Science student with expertise in frontend development 
