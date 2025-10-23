@@ -7,11 +7,11 @@ const Portfolio = ({ id }) => {
   const portfolioItems = [
     {
       id: 1,
-      title: 'Sun Down Frontend',
-      category: 'web-design',
+      title: 'ChatPort',
+      category: 'application',
       image: '/Sun_down.png',
-      link: 'https://github.com/rahul-a-22/Sun_Down_Frontend',
-      description: 'Interactive single-page frontend inspired by Sundown Studio with smooth scrolling, animated loaders, and modern UI components.'
+      link: 'https://github.com/rahul-a-22/ChartPort',
+      description: 'ChatPort is a Python-based client-server application that enables real-time chatting and secure file sharing over a network.'
     },
     {
       id: 2,
@@ -31,22 +31,30 @@ const Portfolio = ({ id }) => {
     },
     {
       id: 4,
-      title: 'Frontend AI/ML Web Application',
-      category: 'web-development',
+      title: 'Mini IP Command Tool',
+      category: 'application',
       image: '/aiml_frontend.png',
-      link: 'https://github.com/rahul-a-22/Frontend_AiMl_web',
-      description: 'Frontend application showcasing AI/ML integration in modern web applications with responsive design.'
+      link: 'https://github.com/rahul-a-22/mini_ip_command_tool',
+      description: 'The Mini IP Command Tool is a cross-platform command-line application to manage IP/network configuration on Windows and Linux.'
     },
     {
       id: 5,
-      title: 'Bit and Build Project',
+      title: 'PassGuard',
       category: 'web-development',
       image: '/bitnbuild.png',
-      link: 'https://github.com/rahul-a-22/Bit_and_Build',
-      description: 'Collaborative project for the Bit and Build hackathon, featuring modern web development technologies.'
+      link: 'https://github.com/rahul-a-22/PassGuard',
+      description: 'A full-stack PassGuard application built with React, Node.js, Express, and MySQL. This application allows users to securely store and manage their passwords with features like authentication, password encryption, and a user-friendly interface.'
     },
     {
       id: 6,
+      title: 'Covid-19 Detection using X-Ray Images',
+      category: 'machine-learning',
+      image: '/lgphackathon.png',
+      link: 'https://github.com/rahul-a-22/covid_19_detection_X-ray',
+      description: 'A comprehensive web application that uses deep learning to detect COVID-19, Viral Pneumonia, and Normal cases from chest X-ray images. Built with Streamlit frontend and Flask backend API, powered by PyTorch.'
+    },
+    {
+      id: 7,
       title: 'LGPhackathon',
       category: 'web-development',
       image: '/lgphackathon.png',
@@ -57,8 +65,8 @@ const Portfolio = ({ id }) => {
 
   const filters = ['all', 'web-development', 'web-design'];
 
-  const filteredItems = activeFilter === 'all' 
-    ? portfolioItems 
+  const filteredItems = activeFilter === 'all'
+    ? portfolioItems
     : portfolioItems.filter(item => item.category === activeFilter);
 
   return (
@@ -67,7 +75,7 @@ const Portfolio = ({ id }) => {
         <div className="section-header">
           <h2>Featured <strong>Portfolio</strong></h2>
         </div>
-        
+
         <div className="portfolio-filters">
           <ul>
             {filters.map(filter => (
@@ -76,9 +84,10 @@ const Portfolio = ({ id }) => {
                   className={activeFilter === filter ? 'active' : ''}
                   onClick={() => setActiveFilter(filter)}
                 >
-                  {filter === 'web-development' ? 'Web Development' : 
-                   filter === 'web-design' ? 'Web Design' :
-                   filter.charAt(0).toUpperCase() + filter.slice(1)}
+                  {filter === 'web-development' ? 'Web Development' :
+                    filter === 'web-design' ? 'Web Design' :
+                    filter === 'application' ? 'Application' :
+                      filter.charAt(0).toUpperCase() + filter.slice(1)}
                 </button>
               </li>
             ))}
@@ -94,9 +103,10 @@ const Portfolio = ({ id }) => {
               <div className="portfolio-info">
                 <h4>{item.title}</h4>
                 <p className="portfolio-description">{item.description}</p>
-                <span className="category">{item.category === 'web-development' ? 'Web Development' : 
-                                          item.category === 'web-design' ? 'Web Design' :
-                                          item.category}</span>
+                <span className="category">{item.category === 'web-development' ? 'Web Development' :
+                  item.category === 'web-design' ? 'Web Design' :
+                  item.category === 'application' ? 'Application' :
+                    item.category}</span>
                 <a href={item.link} target="_blank" rel="noopener noreferrer" className="portfolio-link">
                   <i className="fab fa-github"></i> View on GitHub
                 </a>
