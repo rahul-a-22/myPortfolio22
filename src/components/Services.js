@@ -17,27 +17,27 @@ const Services = ({ id }) => {
     },
     {
       id: 3,
-      title: 'Data Structures & Algorithms',
-      description: 'Deep understanding of fundamental data structures (arrays, linked lists, trees, graphs, heaps) and algorithms (sorting, searching, dynamic programming, graph algorithms). Implementing efficient solutions for complex computational problems.',
-      icon: 'fas fa-sitemap'
-    },
-    {
-      id: 4,
       title: 'Computer Networks',
       description: 'Comprehensive knowledge of computer networking concepts including OSI model, TCP/IP protocols, network security, routing algorithms, and network architecture. Understanding of distributed systems and network programming.',
       icon: 'fas fa-network-wired'
     },
     {
-      id: 5,
-      title: 'Database Management Systems',
-      description: 'Experience with relational database design, SQL queries, normalization, and database optimization. Working with MySQL, understanding ACID properties, and implementing efficient database solutions for web applications.',
-      icon: 'fas fa-database'
-    },
-    {
-      id: 6,
+      id: 4,
       title: 'Operating Systems',
       description: 'Understanding of operating system concepts including process management, memory management, file systems, and system calls. Knowledge of Linux and Windows environments, shell scripting, and system administration basics.',
       icon: 'fas fa-desktop'
+    },
+    {
+      id: 5,
+      title: 'Data Structures & Algorithms',
+      description: 'Deep understanding of fundamental data structures (arrays, linked lists, trees, graphs, heaps) and algorithms (sorting, searching, dynamic programming, graph algorithms). Implementing efficient solutions for complex computational problems.',
+      icon: 'fas fa-sitemap'
+    },
+    {
+      id: 6,
+      title: 'Database Management Systems',
+      description: 'Experience with relational database design, SQL queries, normalization, and database optimization. Working with MySQL, understanding ACID properties, and implementing efficient database solutions for web applications.',
+      icon: 'fas fa-database'
     }
   ];
 

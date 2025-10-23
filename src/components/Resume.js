@@ -46,25 +46,29 @@ const Resume = ({ id }) => {
     },
     {
       id: 3,
-      title: 'Sun Down Frontend (Clone)',
-      description: 'An interactive, single-page frontend inspired by Sundown Studio. Features smooth scrolling, animated loaders, marquee section, hover-preview gallery, and carousel built with vanilla HTML/CSS/JS plus lightweight libraries.',
-      tech: 'HTML, CSS, JavaScript, Vanilla JS'
+      title: 'Mini IP Command Tool',
+      description: 'The Mini IP Command Tool is a cross-platform command-line application to manage IP/network configuration on Windows and Linux.',
+      tech: 'C++, CMake, OOPs concepts'
     }
   ];
 
   const skills = [
     { name: 'C', icon: 'fas fa-code' },
     { name: 'C++', icon: 'fas fa-code' },
+    { name: 'Python', icon: 'fab fa-python' },
     { name: 'HTML', icon: 'fab fa-html5' },
     { name: 'CSS', icon: 'fab fa-css3-alt' },
     { name: 'JavaScript', icon: 'fab fa-js-square' },
     { name: 'React.js', icon: 'fab fa-react' },
     { name: 'MySQL', icon: 'fas fa-database' },
     { name: 'Git', icon: 'fab fa-git-alt' },
+    { name: 'Github', icon: 'fab fa-github' },
     { name: 'DSA', icon: 'fas fa-sitemap' },
     { name: 'DBMS', icon: 'fas fa-database' },
     { name: 'OS', icon: 'fas fa-desktop' },
-    { name: 'CN', icon: 'fas fa-network-wired' }
+    { name: 'CN', icon: 'fas fa-network-wired' },
+    { name: 'VS Code', icon: 'fab fa-vscode' },
+    { name: 'Cursor', icon: 'fab fa-cursor' },
   ];
 
   return (

@@ -9,7 +9,7 @@ const Portfolio = ({ id }) => {
       id: 1,
       title: 'ChatPort',
       category: 'application',
-      image: '/Sun_down.png',
+      image: '/chatport.png',
       link: 'https://github.com/rahul-a-22/ChartPort',
       description: 'ChatPort is a Python-based client-server application that enables real-time chatting and secure file sharing over a network.'
     },
@@ -33,7 +33,7 @@ const Portfolio = ({ id }) => {
       id: 4,
       title: 'Mini IP Command Tool',
       category: 'application',
-      image: '/aiml_frontend.png',
+      image: '/mini_ip_tool.png',
       link: 'https://github.com/rahul-a-22/mini_ip_command_tool',
       description: 'The Mini IP Command Tool is a cross-platform command-line application to manage IP/network configuration on Windows and Linux.'
     },
@@ -41,7 +41,7 @@ const Portfolio = ({ id }) => {
       id: 5,
       title: 'PassGuard',
       category: 'web-development',
-      image: '/bitnbuild.png',
+      image: '/addPassword.png',
       link: 'https://github.com/rahul-a-22/PassGuard',
       description: 'A full-stack PassGuard application built with React, Node.js, Express, and MySQL. This application allows users to securely store and manage their passwords with features like authentication, password encryption, and a user-friendly interface.'
     },
@@ -49,7 +49,7 @@ const Portfolio = ({ id }) => {
       id: 6,
       title: 'Covid-19 Detection using X-Ray Images',
       category: 'machine-learning',
-      image: '/lgphackathon.png',
+      image: '/covid-19.png',
       link: 'https://github.com/rahul-a-22/covid_19_detection_X-ray',
       description: 'A comprehensive web application that uses deep learning to detect COVID-19, Viral Pneumonia, and Normal cases from chest X-ray images. Built with Streamlit frontend and Flask backend API, powered by PyTorch.'
     },
@@ -63,7 +63,7 @@ const Portfolio = ({ id }) => {
     }
   ];
 
-  const filters = ['all', 'web-development', 'web-design'];
+  const filters = ['all', 'web-development', 'application', 'machine-learning'];
 
   const filteredItems = activeFilter === 'all'
     ? portfolioItems
@@ -85,8 +85,8 @@ const Portfolio = ({ id }) => {
                   onClick={() => setActiveFilter(filter)}
                 >
                   {filter === 'web-development' ? 'Web Development' :
-                    filter === 'web-design' ? 'Web Design' :
                     filter === 'application' ? 'Application' :
+                      filter === 'machine-learning' ? 'Machine Learning' :
                       filter.charAt(0).toUpperCase() + filter.slice(1)}
                 </button>
               </li>
@@ -104,8 +104,8 @@ const Portfolio = ({ id }) => {
                 <h4>{item.title}</h4>
                 <p className="portfolio-description">{item.description}</p>
                 <span className="category">{item.category === 'web-development' ? 'Web Development' :
-                  item.category === 'web-design' ? 'Web Design' :
                   item.category === 'application' ? 'Application' :
+                  item.category === 'machine-learning' ? 'Machine Learning' :
                     item.category}</span>
                 <a href={item.link} target="_blank" rel="noopener noreferrer" className="portfolio-link">
                   <i className="fab fa-github"></i> View on GitHub
